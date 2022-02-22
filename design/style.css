@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f5f5;
+    height: auto;
+    max-height: 90vh;
+    font-family: "outfit", sans-serif;
+}
+div.chat-section{
+width: 800px;
+max-width: 90%;
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px --2px rgba(0, 0, 0, 0, 0.5);
+}
+.brand{
+    padding: 5px;
+    padding-top: 45px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.brand h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+.message-area{
+    height: 500px;
+    background-image: url("/chat-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+#textarea1{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #fdfdfd;
+}
+.message{
+    padding: 10px;
+    border-radius: 11px;
+    margin-bottom: 30px;
+    max-width: 300px;
+    position: relative;
+}
+.incoming{
+    background: #f0eff0;
+    color: rgb(8, 8, 8);
+    width: fit-content;
+}
+.outgoing{
+    background: #61eb6d;
+    color: #0c0c0c;
+    margin-left: auto;
+}
+.message h4{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
